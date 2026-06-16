@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h2>Zomato Menu</h2>
+<script>
+function showMenuItem(name, price) {
+  const div = document.createElement("div");
+  div.className = "menu";
+  div.innerHTML = `<h3>${name}</h3><p>Price: ₹${price}</p>`;
+  document.body.appendChild(div);
+}
+
+showMenuItem("Pizza", 299);
+showMenuItem("Burger", 149);
+showMenuItem("Pasta", 199);
+</script>
+</body>
+</html>

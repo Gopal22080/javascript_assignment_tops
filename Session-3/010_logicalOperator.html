@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Can Order Food</title>
+</head>
+<body>
+
+  <h1>Food Order Check</h1>
+
+  <script>
+
+    function canOrderFood(isLoggedIn, hasPaymentMethod) {
+      return isLoggedIn && hasPaymentMethod;
+    }
+
+    console.log(canOrderFood(true, true));    
+    console.log(canOrderFood(true, false));   
+    console.log(canOrderFood(false, true));   
+    console.log(canOrderFood(false, false));  
+
+  </script>
+
+</body>
+</html>
