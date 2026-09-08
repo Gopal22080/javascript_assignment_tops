@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>Movie List</h1>
+  <div class="movie">
+    <h3>Pushpa</h3>
+      <button class="removebtn">Remove</button>
+  </div>
+
+ <div class="movie">
+    <h3>Krish</h3>
+      <button class="removebtn">Remove</button>
+  </div>
+
+  <div class="movie">
+    <h3>Shole</h3>
+      <button class="removebtn">Remove</button>
+  </div>
+
+  <script>
+
+    const buttons = document.querySelectorAll(".removebtn")
+buttons.forEach(function(button){
+  button.addEventListener("click",function(){
+    button.parentElement.remove();
+  });
+});
+
+  </script>
+
+</body>
+</html>

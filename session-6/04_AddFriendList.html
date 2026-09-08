@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Friend List</h2>
+<input type="text" class="friendInput" placeholder="Enter friend name">
+<button class="addFriendBtn">Add Friend</button>
+
+<ul id="friend-list"></ul>
+
+<script>
+const input = document.querySelector(".friendInput");
+const button = document.querySelector(".addFriendBtn");
+const list = document.querySelector("#friend-list");
+
+button.addEventListener("click", function () {
+  const name = input.value;
+
+  if (name === "") return;
+
+  const li = document.createElement("li");
+  li.innerHTML = name;
+
+  list.appendChild(li);
+
+  input.value = "";
+});
+</script>
+</body>
+</html>

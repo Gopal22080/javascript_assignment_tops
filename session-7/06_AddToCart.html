@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+      <button id="add">Add to Cart</button>
+      <h2>
+        Cart
+      </h2>
+
+        <div id="dcart"></div>
+
+        <p>Product Added</p>
+        <script>
+          function addtoCart(){
+            const dcart = document.querySelector("#dcart")
+            dcart.innerHTML += "<p>Product Added</p>" 
+          }
+          const button = document.querySelector("#add")
+          button.addEventListener("click",addtoCart);
+        </script>
+
+</body>
+</html>

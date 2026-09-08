@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+    body { font-family: Arial; }
+  </style>
+<body>
+  
+<h2>My Playlist</h2>
+<input type="text" placeholder="Enter song name" class="songInput">
+<button class="addBtn">Add Song</button>
+<ul id="playlist"></ul>
+
+<script>
+const input = document.querySelector(".songInput");
+const button = document.querySelector(".addBtn");
+const list = document.querySelector("#playlist");
+button.addEventListener("click", function () {
+  const songName = input.value
+  if (songName === "") return;
+const li = document.createElement("li");
+  li.innerHTML = songName;
+
+  list.appendChild(li);
+
+  input.value = "";
+});
+</script>
+
+
+
+</body>
+</html>

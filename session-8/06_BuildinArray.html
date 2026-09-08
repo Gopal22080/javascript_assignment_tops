@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Flipkart product with properties</h2>
+    <script>
+let cart = [
+    {
+        productName: "Samsung Mobile",
+        price: 15000,
+        quantity: 2
+    },
+    {
+        productName: "Laptop",
+        price: 55000,
+        quantity: 1
+    },
+    {
+        productName: "Headphones",
+        price: 2000,
+        quantity: 3
+    },
+    {
+        productName: "Smart Watch",
+        price: 4000,
+        quantity: 2
+    }
+];
+for(let i=0; i<cart.length; i++)
+{
+    let total = cart[i].price * cart[i].quantity;
+    console.log(
+        "Product : " + cart[i].productName +
+        " | Total Price : ₹" + total
+    );
+}
+
+</script>
+
+</body>
+</html>

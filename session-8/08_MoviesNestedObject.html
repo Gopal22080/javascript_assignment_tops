@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>  
+  <h2>Movies and IMDb Ratings</h2>
+  <script>
+let movies = [
+    {
+        title: "KGF",
+        year: 2018,
+        rating: {
+            imdb: 8.2,
+            rottenTomatoes: 95
+        }
+    },
+    {
+        title: "Pushpa",
+        year: 2021,
+        rating: {
+            imdb: 7.8,
+            rottenTomatoes: 89
+        }
+    },
+    {
+        title: "RRR",
+        year: 2022,
+        rating: {
+            imdb: 8.0,
+            rottenTomatoes: 91
+        }
+    }
+];
+
+for(let i=0; i<movies.length; i++)
+{
+    console.log(
+        "Movie : " + movies[i].title +
+        " | IMDb Rating : " + movies[i].rating.imdb
+    );
+}
+</script>
+</body>
+</html>

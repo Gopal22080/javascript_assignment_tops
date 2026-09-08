@@ -6,10 +6,21 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="greeting"></div>
+  
+  <h2>Remove Second Playlist</h2>
+
 <script>
-document.getElementById("greeting").innerHTML =
-  "Hello, welcome to your playlist!";
+let playlists = [
+    "Bollywood Hits",
+    "English Songs",
+    "Workout Mix",
+    "LoFi Beats"
+];
+
+playlists.splice(1,1,"Romantic Songs");
+
+console.log(playlists);
 </script>
+  
 </body>
 </html>

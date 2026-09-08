@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Add Song</title>
+</head>
+<body>
+
+    <button onclick="addRandomSong()">
+        Add Song
+    </button>
+
+    <div id="songList"></div>
+
+    <script>
+        let songs = [
+            "Believer",
+            "Perfect",
+            "Shape of You",
+            "Levitating",
+            "Closer"
+        ];
+        function addRandomSong() {
+            let randomIndex = Math.floor(Math.random() * songs.length);
+            let newCard = document.createElement("div");
+            newCard.innerHTML = songs[randomIndex];
+            newCard.style.border = "1px solid black";
+            newCard.style.padding = "10px";
+            newCard.style.margin = "10px";
+          document.getElementById("songList").appendChild(newCard);
+        }
+
+
+    </script>
+
+</body>
+</html>
+</body>
+</html>

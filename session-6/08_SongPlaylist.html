@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <p>
+  Now Playing:
+  <span id="song-title">
+    Believer
+  </span>
+</p>
+
+<button onclick="changeSong()">  Change Song</button>
+
+<script>
+  let songs = [
+  "Believer",
+  "Shape of You",
+  "Perfect",
+  "Levitating",
+  "Blinding Lights"
+];
+
+let index = 0;
+
+function changeSong() {
+
+  index++;
+
+  if (index >= songs.length) {
+    index = 0;
+  }
+
+  document.getElementById("song-title").innerHTML = songs[index];
+}
+</script>
+
+</body>
+</html>

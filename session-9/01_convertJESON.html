@@ -6,12 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  
-  <a href="https://www.flipkart.com/">Flipkart</a>
-
+  <h2>COnvert object in to a JSON</h2>
   <script>
-    console.log("Hellow From the Console!");
-                                                                            
-  </script>
+
+let product = {
+    name: "Samsung Galaxy S25",
+    price: 65000,
+    rating: 4.6
+};
+
+let jsonData = JSON.stringify(product);
+
+console.log(jsonData);
+
+</script>
 </body>
 </html>

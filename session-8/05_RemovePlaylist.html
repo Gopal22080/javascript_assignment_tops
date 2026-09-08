@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop() Method Example</title>
+</head>
+<body>
+
+    <h2>Remove the last playlist from your playlists </h2>
+
+    <script>
+        let playlists = [
+            {
+                name: "Chill Vibes",
+                creator: "Spotify",
+                numberOfSongs: 25
+            },
+            {
+                name: "Workout Mix",
+                creator: "Rahul",
+                numberOfSongs: 18
+            },
+            {
+                name: "Rock Hits",
+                creator: "Gopal",
+                numberOfSongs: 20
+            }
+        ];
+
+        let removedPlaylist = playlists.pop();
+
+        console.log("Removed Playlist:");
+        console.log(removedPlaylist);
+        console.log("Updated Playlists:");
+        console.log(playlists);
+    </script>
+</body>
+</html>
