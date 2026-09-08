@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feed Loading</title>
+</head>
+<body>
+  <h2 id="status">Please wait...</h2>
+
+  <script>
+    // Q1/Q2 - Loading message after 2 seconds, then feed loaded after another 2 seconds
+    const status = document.getElementById("status");
+
+    setTimeout(() => {
+      status.textContent = "Loading your feed...";
+
+      setTimeout(() => {
+        status.textContent = "Feed loaded!";
+      }, 2000);
+    }, 2000);
+  </script>
+</body>
+</html>

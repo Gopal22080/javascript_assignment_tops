@@ -1,0 +1,16 @@
+// Q6 - Import named exports from utils.js
+import { formatPrice, getDiscountedPrice } from "./utils.js";
+
+const items = [
+  { name: "Shoes", price: 1999, discount: 10 },
+  { name: "T-Shirt", price: 999, discount: 20 },
+  { name: "Watch", price: 2499, discount: 15 }
+];
+
+items.forEach((item) => {
+  const discountedPrice = getDiscountedPrice(item.price, item.discount);
+
+  console.log(
+    `${item.name} - Original: ${formatPrice(item.price)}, Discounted: ${formatPrice(discountedPrice)}`
+  );
+});
